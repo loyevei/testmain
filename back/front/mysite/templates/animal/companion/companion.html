@@ -1,0 +1,83 @@
+{% extends 'base2.html' %}
+
+{% load static %} 
+
+{% block content %}
+    <!-- Masthead-->
+    <header class="masthead">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 align-items-center justify-content-center text-center">
+                <div class="col-lg-8 align-self-end">
+                    <h1 class="text-dark font-weight-bold"></h1>
+                </div>
+                <div class="col-lg-8 align-self-baseline">
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- About-->
+    <section class="page-section bg-primary">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="text-white mt-0" id="text_1">Companion pets data analysis</h2>
+                    <hr class="divider" />
+                    <p class="text-white-75 mb-4" align="middle">
+                        <p>지도로 보는 지역별 반려동물 등록 현황</p>
+                        <iframe src="{% static 'ani_register.html' %}" width="650" height="600"></iframe>
+                    </p>
+                    <p class="text-white-75 mb-4">
+                        <p>막대그래프로 보는 지역별 반려동물 등록 수</p>
+                        <div class="bk-root" id="dffd6ba4-4435-4ad8-b430-a37839ec827e" data-root-id="17521"></div>
+                    </p>
+                    <p class="text-white-75 mb-4">
+                        <p>연도별 반려동물 등록 추이</p>
+                        <div class="bk-root" id="0384dd4a-44ee-4543-a33c-753dc399a583" data-root-id="16849"></div>
+                    </p>
+                    <p class="text-white-75 mb-4">
+                        <img src="animal.png" alt="My Image">
+                    </p>
+                    <p class="text-white-75 mb-4">
+                        <p></p>
+                        <div class="bk-root" id="ef52510f-77b0-4e64-82a5-65bd66d50cf8" data-root-id="15347"></div>
+                    </p>
+                    <p class="text-white-75 mb-4">
+                        <p></p>
+                        <div class="folium-map" id="map_c9580173033b4dc4b5155d917898f26a" ></div>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services-->
+    <section class="page-section" id="services">
+        <div class="container px-4 px-lg-5">
+            <h2 class="text-center mt-0">Our Services</h2>
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="mt-5">
+                        <div class="mb-2"><i class="fas fa-check-square fa-3x"></i></div>
+                        <h3 class="h4 mb-2">Register</h3>
+                        <p class="text-muted mb-0">반려동물 등록 현황을 알 수 있습니다</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio-->
+    <!-- Call to action-->
+    <section class="page-section bg-dark text-white">
+        <div class="container px-4 px-lg-5 text-center">
+            <h2 class="mb-4">If you have any questions or comments, just contact us!</h2>
+            <a class="btn btn-light btn-xl" href="https://startbootstrap.com/theme/creative/">contact us</a>
+        </div>
+    </section>
+    <!-- Contact-->
+    <!-- Footer-->
+    <footer class="bg-light py-5">
+        <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright & copy ; 2021 - Company *4조*</div></div>
+    </footer>
+    {% include 'p5-2.html' %}
+    {% include 'p5-3.html' %}
+    {% include 'funeral.html' %}
+{% endblock %}
